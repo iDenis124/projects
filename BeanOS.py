@@ -5,21 +5,26 @@ import pyttsx3
 import os
 import random
 import pyperclip
+import colorama
+from colorama import Fore, Style
 # -----------------------------------
 user = getpass.getuser()
 engine = pyttsx3.init()
-greetings = ["Good day", "Good night", "How the fuck are you", "It's you", "Motherfucking", "Fuck boy"]
+greetings = ["Good day", "Good night", "How the fuck are you",
+             "It's you", "Motherfucking", "Fuck boy"]
 # -----------------------------------
+
+
 def bootup():
-    print(r"""
-     ____                    ____   _____
+    print(Fore.MAGENTA + r"""
+     ____                    ____   _____
     |  _ \                  / __ \ / ____|
     | |_) | ___  __ _ _ __ | |  | | (___  
     |  _ < / _ \/ _` | '_ \| |  | |\___ \ 
     | |_) |  __/ (_| | | | | |__| |____) |
     |____/ \___|\__,_|_| |_|\____/|_____/
     """)
-    print("")
+    print(Fore.WHITE + "")
     engine.say("{0}, {1}".format(random.choice(greetings), user))
     engine.runAndWait()
     print("Opening the Bootloader")
@@ -31,8 +36,12 @@ def bootup():
     print("DONE")
     time.sleep(1)
     clear()
+
+
 def clear():
     return os.system('cls')
+
+
 def MainMenu():
     print("Please choose an option")
     print("")
@@ -75,6 +84,8 @@ def MainMenu():
     else:
         print("That in not an option!")
         input()
+
+
 def FileManager():
     print("1: Drive C:")
     print("2: Drive D:")
@@ -153,6 +164,8 @@ def FileManager():
         input()
         clear()
         FileManager()
+
+
 def SGAtranslator():
     print("1: English to Standard Galactic Alplabet")
     print("2: Standard Galactic Alplabet to English")
@@ -218,6 +231,8 @@ def SGAtranslator():
     time.sleep(1)
     clear()
     SGAtranslator()
+
+
 # -----------------------------------
 bootup()
 while True:
