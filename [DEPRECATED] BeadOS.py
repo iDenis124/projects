@@ -3,15 +3,15 @@ import getpass
 import webbrowser
 import pyttsx3
 import os
-logo=r"""
+logo = r"""
  ____                    ____   _____
 |  _ \                  / __ \ / ____|
 | |_) | ___  __ _ _ __ | |  | | (___  
 |  _ < / _ \/ _` | '_ \| |  | |\___ \ 
 | |_) |  __/ (_| | | | | |__| |____) |
 |____/ \___|\__,_|_| |_|\____/|_____/
-"""      
-print(logo)                       
+"""
+print(logo)
 print("")
 User = getpass.getuser()
 engine = pyttsx3.init()
@@ -19,7 +19,11 @@ engine.say("Good day, {0}".format(User))
 engine.runAndWait()
 print("Opening the Bootloader")
 a = 0
-clear = lambda: os.system('cls')
+
+
+def clear(): return os.system('cls')
+
+
 time.sleep(3)
 print("Ensuring Dank Memes")
 time.sleep(3)
@@ -30,6 +34,8 @@ time.sleep(3)
 print("DONE")
 clear()
 print("Hello, {0}!".format(User))
+
+
 def MainMenu():
     print("Please choose an option")
     time.sleep(1)
@@ -63,5 +69,7 @@ def MainMenu():
         engine.say("Pigs are common passive mobs that spawn in the Overworld. They drop porkchops upon death, and can be ridden with saddles. Pigs typically appear in the Overworld in groups of 4. They randomly oink. Pigs move similarly to other passive mobs; they wander aimlessly, and avoid lava and cliffs high enough to cause fall damage. They make no attempt to stay out of water, bobbing up and down to stay afloat. When they encounter obstacles, pigs often hop up and down, apparently attempting to jump over them regardless of whether it is possible. Pigs can be pushed into minecarts and transported by rail. Pigs follow any player carrying a carrot, carrot on a stick, potato, or beetroot, and stops following if the player moves farther than approximately 8 blocks away from the pig. When a pig is struck by lightning or hit by a trident with the Channeling enchantment during a thunderstorm, it transforms into a zombie pigman. If the pig was equipped with a saddle, the saddle is lost, and a mounted player is ejected. Pigs can be bred using carrots, potatoes, and beetroots. It takes about 5 minutes before the parents can be bred again, as with all farm animals. It takes at least one full Minecraft %27day%27 (20 minutes) for piglets to mature. The appearance of a piglet is roughly similar to that of an adult pig, having the same sized heads, but noticeably smaller bodies. Piglets stay near their parents until they mature, although the parents cannot protect them from harm")
         engine.runAndWait()
         clear()
+
+
 while(1 == 1):
     MainMenu()
