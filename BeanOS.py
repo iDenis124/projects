@@ -245,6 +245,7 @@ def SGAtranslator():
     else:
         print("That is not an option")
 
+
 # -----------------------------------
 bootup()
 while True:
