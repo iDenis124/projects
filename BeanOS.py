@@ -83,6 +83,7 @@ def MainMenu():
         print("Copyright Fern#8592")
         input()
     else:
+        clear()
         print("That in not an option!")
         input()
 
@@ -126,6 +127,7 @@ def FileManager():
                 SGAtranslator()
                 FileManager()
             else:
+                clear()
                 print("That is not an option")
                 input()
                 clear()
@@ -151,6 +153,7 @@ def FileManager():
                 clear()
                 FileManager()
         else:
+            clear()
             print("That is not an option")
             input()
             clear()
@@ -161,6 +164,7 @@ def FileManager():
         clear()
         FileManager()
     else:
+        clear()
         print("That is not an option")
         input()
         clear()
@@ -243,6 +247,7 @@ def SGAtranslator():
         clear()
         SGAtranslator()
     else:
+        clear()
         print("That is not an option")
 
 
