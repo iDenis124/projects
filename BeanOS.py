@@ -233,8 +233,17 @@ def SGAtranslator():
     print("It has been copied to your clipboard!")
     time.sleep(1)
     clear()
-    SGAtranslator()
-
+    print("1: Main Menu")
+    print("2: Standard Galactic Alphabet translator")
+    option = str(input(""))
+    if(option == "1"):
+        clear()
+        MainMenu()
+    elif(option == "2"):
+        clear()
+        SGAtranslator()
+    else:
+        print("That is not an option")
 
 # -----------------------------------
 bootup()
