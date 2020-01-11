@@ -71,6 +71,7 @@ def MainMenu():
             "https://www.reddit.com/r/{0}".format(subreddit))
     elif(option == "3"):
         print("Games still WIP")
+        time.sleep(1)
         clear()
         MainMenu()
     elif(option == "4"):
@@ -171,6 +172,7 @@ def SGAtranslator():
     print("2: Standard Galactic Alplabet to English")
     TranslationMode = str(input())
     if(TranslationMode == "1"):
+        clear()
         Sentence = input("What sentence would you like translated?\n")
         Sentence = Sentence.replace("a", "ᔑ")
         Sentence = Sentence.replace("b", "ʖ")
@@ -199,6 +201,7 @@ def SGAtranslator():
         Sentence = Sentence.replace("y", "||")
         Sentence = Sentence.replace("z", "⨅")
     elif(TranslationMode == "2"):
+        clear()
         Sentence = input("What sentence would you like translated?\n")
         Sentence = Sentence.replace("ᔑ", "a")
         Sentence = Sentence.replace("ʖ", "b")
