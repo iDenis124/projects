@@ -17,12 +17,12 @@ greetings = ["Good day", "Good night", "How the fuck are you",
 
 def bootup():
     print(Fore.MAGENTA + r"""
-     ____                    ____   _____
-    |  _ \                  / __ \ / ____|
-    | |_) | ___  __ _ _ __ | |  | | (___  
-    |  _ < / _ \/ _` | '_ \| |  | |\___ \ 
-    | |_) |  __/ (_| | | | | |__| |____) |
-    |____/ \___|\__,_|_| |_|\____/|_____/
+ ____                    ____   _____
+|  _ \                  / __ \ / ____|
+| |_) | ___  __ _ _ __ | |  | | (___  
+|  _ < / _ \/ _` | '_ \| |  | |\___ \ 
+| |_) |  __/ (_| | | | | |__| |____) |
+|____/ \___|\__,_|_| |_|\____/|_____/
     """)
     print(Fore.WHITE + "")
     engine.say("{0}, {1}".format(random.choice(greetings), user))
@@ -108,7 +108,7 @@ def FileManager():
             print("1: Boot")
             print("2: Main Menu")
             print("3: File Manager")
-            print("4: English to Standard Galactic Alphabet")
+            print("4: Standard Galactic Alphabet Translator")
             files = str(input())
             if(files == "1"):
                 clear()
