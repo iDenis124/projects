@@ -54,8 +54,8 @@ def MainMenu():
     option = str(input())
     clear()
     if(option == "1"):
-        googleRAW = input("What would you like to search?\n")
-        google = googleRAW.replace(" ", "+")
+        google = input("What would you like to search?\n")
+        google = google.replace(" ", "+")
         webbrowser.open_new_tab(
             "https://www.google.com/search?q={0}".format(google))
     elif(option == "2"):
@@ -65,8 +65,8 @@ def MainMenu():
         print("r/dankmemes")
         print("r/whoooosh")
         print("r/yiff")
-        subredditRAW = input()
-        subreddit = subredditRAW.replace("r/", "")
+        subreddit = input()
+        subreddit = subreddit.replace("r/", "")
         webbrowser.open_new_tab(
             "https://www.reddit.com/r/{0}".format(subreddit))
     elif(option == "3"):
@@ -172,8 +172,8 @@ def FileManager():
 
 
 def SGAtranslator():
-    print("1: English to Standard Galactic Alplabet")
-    print("2: Standard Galactic Alplabet to English")
+    print("1: English to Standard Galactic Alphabet")
+    print("2: Standard Galactic Alphabet to English")
     TranslationMode = str(input())
     if(TranslationMode == "1"):
         clear()
