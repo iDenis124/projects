@@ -6,6 +6,7 @@ import os
 import random
 import pyperclip
 import colorama
+import sys
 from colorama import Fore, Style
 # -----------------------------------
 user = getpass.getuser()
@@ -15,15 +16,22 @@ greetings = ["Good day", "Good night", "How the fuck are you",
 # -----------------------------------
 
 
+def delay_print(s):
+    for c in s:
+        sys.stdout.write(c)
+        sys.stdout.flush()
+        time.sleep(0.025)
+
+
 def bootup():
-    print(Fore.MAGENTA + r"""
+    delay_print(Fore.MAGENTA + r"""
  ____                    ____   _____
 |  _ \                  / __ \ / ____|
 | |_) | ___  __ _ _ __ | |  | | (___  
 |  _ < / _ \/ _` | '_ \| |  | |\___ \ 
 | |_) |  __/ (_| | | | | |__| |____) |
 |____/ \___|\__,_|_| |_|\____/|_____/
-    """)
+""")
     print(Fore.WHITE + "")
     engine.say("{0}, {1}".format(random.choice(greetings), user))
     engine.runAndWait()
