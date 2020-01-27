@@ -1,5 +1,6 @@
 # Untitled Word Game
-Welcome to UWD, a quick game I made because I had no one to play with 😢
+Welcome to UWD, a quick game I made because I had no one to play with 😢 </br>
+You also need to download wordlist and have it in the same folder 
 ## How to play
 - A player starts by saying a letter
 - The other played says a word that starts with that letter
