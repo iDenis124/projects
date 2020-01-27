@@ -14,7 +14,7 @@ Player 2: amazing </br>
 Player 1: green </br>
 Player 2: niece  </br>
 And so on
-# Reasons for and End Screen
+# Reasons for an End Screen
 - Already used word
 - Not a real word
 - Doesn't start with the letter of the last word
